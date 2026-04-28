@@ -1,6 +1,6 @@
 function Order({ order, setOrder, onPlaceOrder }) {
     return (
-        <div className="card">
+        <div className="Container">
             <form onSubmit={e => { e.preventDefault(); onPlaceOrder(); }}>
                 <label htmlFor="productName">Product Name:</label>
                 <input
