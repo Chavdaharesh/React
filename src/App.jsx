@@ -43,8 +43,18 @@ function App() {
 
   return (
     <div className="App">
-      <Order order={order} setOrder={setOrder} onPlaceOrder={handlePlaceOrder} />
-      <OrderList orders={orders} />
+      <div className="app-header">
+        <h1>Order Management System</h1>
+        <p className="app-subtitle">Manage your orders efficiently</p>
+      </div>
+      <div className="app-container">
+        <div className="form-section">
+          <Order order={order} setOrder={setOrder} onPlaceOrder={handlePlaceOrder} />
+        </div>
+        <div className="list-section">
+          <OrderList orders={orders} />
+        </div>
+      </div>
     </div>
   );
 }
