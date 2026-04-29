@@ -42,11 +42,9 @@ function App() {
   }
 
   return (
-    <div className="App">  
-      <div className="card">
-        <Order order={order} setOrder={setOrder} onPlaceOrder={handlePlaceOrder} />
-        <OrderList orders={orders} />
-      </div>
+    <div className="App">
+      <Order order={order} setOrder={setOrder} onPlaceOrder={handlePlaceOrder} />
+      <OrderList orders={orders} />
     </div>
   );
 }
