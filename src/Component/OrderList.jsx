@@ -11,8 +11,9 @@ function OrderList({ orders }) {
                     {orders.map((order, index) => (
                         <li key={index}>
                             <div className="order-item-details">
+                                <div className="order-item-id">ID: {index}</div>
                                 <div className="order-item-name">{order.Name}</div>
-                                <div className="order-item-qty">Qty: {order.Quantity}</div>                                
+                                <div className="order-item-qty">Qty:`` {order.Quantity}</div>                                
                                 <div className="order-item-price">${parseFloat(order.Price).toFixed(2)}</div>
                             </div>
                         </li>
